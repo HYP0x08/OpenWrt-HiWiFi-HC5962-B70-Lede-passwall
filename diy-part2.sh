@@ -12,8 +12,8 @@
 
 # 修改默认IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
-sed -i 's/192.168/10.0/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.4.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168/10.0/g' package/base-files/files/bin/config_generate
 #禁用IPv6 DHCP，包含单引号的sed外部直接用双引号
 sed -i "s/ipv6='1'/ipv6='0'/g" package/base-files/files/bin/config_generate
 # 设置 DNS 解析端口
